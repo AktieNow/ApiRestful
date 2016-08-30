@@ -1,0 +1,16 @@
+{
+  "name": "meet-api",
+  "version": "0.0.1",
+  "description": "Meet sobre como criar uma api Restful com Express",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "router": "^1.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "Moises Pereira",
+  "license": "ISC"
+}
