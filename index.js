@@ -1,13 +1,16 @@
 var express = require('express');
 var app = express();
 var fs = require('fs');
+var http = require('http');
+
+//106m 108h 115r
 
 app.get('/envia', function(req, res) {
 
-   http.get('http://192.168.1.108:3000/recebe?nome=Moises', function(data){
+   http.get('http://192.168.1.108:3000/recebe?nome=Rafael', function(data){
       console.log('foi');
    });
-   res.end();
+   //res.end();
 
 });
 
@@ -21,7 +24,7 @@ app.get('/retorna', function(req, res) {
         console.log("Arquivo salvo");
     });
 
-    res.send(req.query.nome);
+    //res.send(req.query.nome);
 });
 
 var server = app.listen(3000, function(){
